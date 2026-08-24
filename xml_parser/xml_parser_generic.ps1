@@ -95,7 +95,7 @@ foreach ($file in $xml_files) {
 if ($xml_full_records) {
 	Write-Host "gathering headers and exporting to csv..." -ForegroundColor Cyan
 
-	# gather every unique items found across all processed files
+	# get all unique items found across all processed files
 	$xml_headers = $xml_full_records | ForEach-Object { $_.PSObject.Properties.Name } | Select-Object -Unique
 
 	# export headers and value data to csv
