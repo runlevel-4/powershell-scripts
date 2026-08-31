@@ -1,4 +1,4 @@
-# Watchdog
+# Web/Application Server Watchdog
 This script loops through a list of servers and monitors services and application pools.
 
 1. Checks services for "stopped" state and starts them (unless set to disabled/manual start types).
